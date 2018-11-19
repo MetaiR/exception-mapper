@@ -1,5 +1,5 @@
 # Exception Mapper library for jersey (server)
-this plugins contains bunch of custom exceptions and *`javax.ws.rs.ext.Provider`*s for handling them for using in creating
+this plugins contains bunch of custom exceptions and **_`javax.ws.rs.ext.Provider`_**s for handling them for using in creating
 REST APIs with `jersey` implementation of jax-rs.
 
 ### What problems will this library solve?
