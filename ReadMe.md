@@ -71,7 +71,7 @@ public class JerseyConfiguration extends ResourceConfig {
     public JerseyConfiguration() {
         List<Class> list = new MapperBuilder()
                              // .all() this will add mappers to the list
-                             // .except((Mappers).ALREADY_EXIST) this will remove AlreadyExisted exception mapper from the list
+                             // .except(Mappers.ALREADY_EXIST) this will remove AlreadyExisted exception mapper from the list
                                 .fetch();
         
         for (Class klass : list) {
