@@ -44,13 +44,13 @@ first you need to add this library as an dependency to your `org.glassfish.jerse
   <dependency>
       <groupId>com.github.metair.jersey</groupId>
       <artifactId>exception-mapper</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
   </dependency>
   ```
 
   * for gradle projects:
   ```
-  compile group: 'com.github.metair.jersey', name: 'exception-mapper', version: '1.0.0'
+  compile group: 'com.github.metair.jersey', name: 'exception-mapper', version: '1.0.1'
   ```
 
 > **Note:** this library needs this to add runtime:
