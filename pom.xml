@@ -6,7 +6,7 @@
 
     <groupId>com.github.metair.jersey</groupId>
     <artifactId>exception-mapper</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>custom exceptions and exception mappers for jersey</name>

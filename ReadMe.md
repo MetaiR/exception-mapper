@@ -34,7 +34,7 @@ I always have two problems with creating REST APIs:
     if you have a busy life and **"find what you need mostly when ever you need"** you probably have to simulate the 
     deployment environment to and debug your codes to find out it's not your fault.
     
-    with this library you can tell your client which field(s) is/are wrong, needed, already existed and etc, you choose.
+    with this library you can tell your client which fields(s) is/are wrong, needed, already existed and etc, you choose.
     
 ### Quick start
 first you need to add this library as an dependency to your `org.glassfish.jersey` project:

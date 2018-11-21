@@ -5,6 +5,8 @@ package com.github.metair.jersey.exceptionmapper.exceptions.badrequests;
 import com.github.metair.jersey.exceptionmapper.exceptions.error.ErrorModel;
 import com.github.metair.jersey.exceptionmapper.exceptions.error.ErrorTypes;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -17,10 +19,16 @@ public class MissingRequiredDataException extends BadRequestException {
      *
      */
     private static final long serialVersionUID = 1382411461589444277L;
-    private List<String> field;
+    private List<String> fields;
 
-    public MissingRequiredDataException(List<String> field) {
-        this.field = field;
+    public MissingRequiredDataException(List<String> fields) {
+        this.fields = fields;
+    }
+    public MissingRequiredDataException(String... fields) {
+        this.fields = fields != null ? Arrays.asList(fields) : null;
+    }
+    public MissingRequiredDataException(String field) {
+        this.fields = field != null ? Collections.singletonList(field) : null;;
     }
 
     @Override
@@ -30,7 +38,7 @@ public class MissingRequiredDataException extends BadRequestException {
         error.setText(
                 "there are some missing values. we realy need them, please send them for us. check our APIs documents"
         );
-        error.setFields(field);
+        error.setFields(fields);
 
         return error;
     }
