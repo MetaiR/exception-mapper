@@ -27,7 +27,7 @@ public class WrongDataException extends BadRequestException {
         this.fields = fields != null ? Arrays.asList(fields) : null;
     }
     public WrongDataException(String field) {
-        this.fields = field != null ? Collections.singletonList(field) : null;;
+        this.fields = field != null ? Collections.singletonList(field) : null;
     }
 
 

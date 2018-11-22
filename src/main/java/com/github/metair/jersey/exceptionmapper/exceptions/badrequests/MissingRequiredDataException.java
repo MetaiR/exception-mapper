@@ -28,7 +28,7 @@ public class MissingRequiredDataException extends BadRequestException {
         this.fields = fields != null ? Arrays.asList(fields) : null;
     }
     public MissingRequiredDataException(String field) {
-        this.fields = field != null ? Collections.singletonList(field) : null;;
+        this.fields = field != null ? Collections.singletonList(field) : null;
     }
 
     @Override
